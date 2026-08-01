@@ -18,8 +18,11 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors'); // 👈 CORS Add kiya
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+// गलत तरीका:
+fetch('/api/contact', { method: 'POST', body: data })
+
+// सही तरीका (अपने बैकएंड का सही पोर्ट डालें):
+fetch('http://localhost:5000/api/contact', { method: 'POST', body: data })
 
 // Change this before deploying anywhere public!
 const ADMIN_KEY = process.env.ADMIN_KEY || 'Vickymanshi@200727';
