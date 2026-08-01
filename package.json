@@ -1,0 +1,20 @@
+{
+  "name": "vickys-creation-backend",
+  "version": "1.0.0",
+  "description": "Backend for Vicky's Creation website - collects contact form leads",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
+    "mongoose": "^9.9.0",
+    "nodemailer": "^9.0.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
